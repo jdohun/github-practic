@@ -1,0 +1,52 @@
+ctrl + ` : 터미널 오픈
+exit : 터미널 나가기
+
+git init : 이 폴더를 git 관리폴더로 지정
+
+git config --global user.name "이름"	: 이름 설정
+git config --global user.email "이메일"	: 이메일 설정
+
+git config user.name	: 이름 확인
+git config user.email	: 이메일 확인
+
+git add -A		: 폴더 내 변화 staging
+git commit -m "메모"	: 커밋 및 메모
+
+git status : 현재 상태 확인
+
+git reset 돌아갈 커밋의 일련번호 앞 6자리 --hard	: 특정 시점으로 돌아가기 (❗️복구불가능)
+git revert 상쇄할 커밋의 일련번호 앞 6자리
+
+git branch 브랜치명			: 브랜치명으로 브랜지 생성
+git branch				: local에서 가지고 있는 branch 확인
+git checkout 브랜치명			: 브랜치명으로 이동
+git switch 브랜치명			: 브랜치명으로 이동
+git checkout -b 브랜치명			: 브랜치 생성과 동시에 이동 (switch 안됨)
+git merge 브랜치명				: 이름 branch의 변화를 와 현재 가지를 연결
+git log					: git 상태 확인
+git log --graph --all --decorate	: branch 시각화 명령어
+git rebase 브랜치명			: 이름을 현재 가지와 하나로 합침
+git branch -D 브랜치명			: 로컬 이름 브랜치 삭제 (d 대소문자 무관)
+
+git remote				: 현 폴더의 원격 레파지토리 확인
+git branch -M main			: master의 이름을 main으로 변경
+		('Black Lives Matter' 운동으로 master slave 단어 대체로 인한 git 자체의 변경)
+git push -u 원격명(origin) 브랜치명(master)	: 폴더의 현 브랜치에 커밋된 내용들을
+						(origin)에 (master)이름으로 올림
+git fetch				: 원격으로부터 새로운 정보 확인
+git push 원격명 브랜치명			: 원격명으로 브랜치 보냄
+git push				: 현재 연결되어있는 원격으로 정보 보냄
+git pull 원격명 브랜치명			: 원격명의 브랜치명의 최신 정보 받기
+git pull				: 연결된 원격으로부터 최신 정보 받기
+git branch -a				: 원격의 정보를 포함한 브랜치 확인
+git checkout -b 브랜치명 원격명/브랜치명	: 브랜치명에 원격의 브랜치를 받아서 이동
+git push -d 원격명 브랜치명			: 원격에 있는 브랜치 삭제
+
+.gitignore : 명령어x 파일로 생성 후 안에 git으로 저장하지 않을 목록을 기록하여 저장을 막음
+
+git clone giturl	: 현재 프로젝트가 있는 폴더로 giturl을 내려받음
+cd .\폴더명\ 		: 폴더명으로 작업공간 이동
+
+
+vi 에디터 명령어
+그대로 저장하겠다	= :q(콜론 큐)
